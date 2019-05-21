@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+<script src="app.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="shortcut icon" href="assets/favicon.jpg">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory|R2R Admin Dashboard</title>
+</head>
+<body>
+<center>
+
+    <div align="left">
+
+        <button style="font-size: large; display: inline-block; margin-right: 85%" ng-click="logout()">Logout</button>
+        <button style="font-size: large; display: inline-block;" ng-click="addBook()">Add Book</button>
+        <button style="font-size: large; display: inline-block;" ng-click="goHome()">Home</button>
+
+    </div>
+    <h1>Room to Read</h1>
+    <h3 style="color: #00BCD4">Inventory</h3>
+    <br><br>
+    <div>
+        <p style="font-size: 13pt">Search by Book Name:</p>
+        <input style="font-size: large" type="text" ng-model="search.name">
+    </div>
+
+    <br><br><br>
+    <table style="width: 80%">
+        <tr>
+        <th>Book ID</th>
+            <th>Name</th>
+
+            <th>Author</th>
+            <th>Price</th>
+            <th>Active Status</th>
+            <th>Trending Status</th>
+            <th>See Listing</th>
+
+            <th>Edit Listing</th>
+
+
+
+        </tr>
+        <tr ng-repeat="item in books| filter:search">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.author}}</td>
+
+            <td>LKR {{item.price}}</td>
+
+            <td>{{item.activeStatus}}</td>
+            <td>{{item.trendingStatus}}</td>
+            <td><a href="http://127.0.0.1/r2r-front/#!/product?id={{item.id}}" target="_blank">See Listing</a></td>
+            <td><button style="background: lightskyblue" ng-click="editListing(item.id)">Edit Listing</button></td>
+
+
+        </tr>
+    </table>
+
+    <br><br><br>
+</center>
+</body>
+</html>

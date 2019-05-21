@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OSC's Room to Read</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Sublime project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">-->
+<!--<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo"><a href="#">Room to Read</a></div>
+							<div class="header_extra ml-auto">
+								<div class="search_panel_content d-flex flex-row align-items-center justify-content-end">
+									<form ng-submit="searchBooks()">
+										<input type="text" class="search_input" placeholder="Search Store"
+											   required="required" style="background: lightgray; width: 180%" name="searchquery" ng-model="searchquery">
+
+									</form>
+
+								</div>
+							</div>
+							<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+							<nav class="main_nav">
+
+								<ul>
+									<li>
+										<a href="#!/home">Home</a>
+									</li>
+									<li class="hassubs">
+										<a href="">Categories</a>
+										<ul>
+											<li><a href="#!/home?query=science-fiction">Science-Fiction</a></li>
+											<li><a href="#!/home?query=drama">Drama</a></li>
+											<li><a href="#!/home?query=romance">Romance</a></li>
+											<li><a href="#!/home?query=fantasy">Fantasy</a></li>
+											<li><a href="#!/home?query=mystery">Mystery</a></li>
+											<li><a href="#!/home?query=horror">Horror</a></li>
+											<li><a href="#!/home?query=children's-books">Children's books</a></li>
+											<li><a href="#!/home?query=non-fiction">Non-Fiction</a></li>
+											<li><a href="#!/home?query=adventure">Adventure</a></li>
+											<li><a href="#!/home?query=realistic-fiction">Realistic Fiction</a></li>
+
+										</ul>
+									</li>
+									<li><a href="#!/about">About Us</a></li>
+									<li class="active"><a href="#!/contact">Contact</a></li>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Search Panel -->
+
+		<!-- Social -->
+
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu menu_mm trans_300">
+		<div class="menu_container menu_mm">
+			<div class="page_menu_content">
+
+				<div class="page_menu_search menu_mm">
+					<form action="#">
+						<input type="search" required="required" class="page_menu_search_input menu_mm"
+							   placeholder="Search for products...">
+					</form>
+				</div>
+				<ul class="page_menu_nav menu_mm">
+					<li class="page_menu_item menu_mm">
+						<a href="#!/home">Home<i class="fa fa-angle-down"></i></a>
+
+					</li>
+					<li class="page_menu_item has-children menu_mm">
+						<a href="categories.html">Categories<i class="fa fa-angle-down"></i></a>
+						<ul class="page_menu_selection menu_mm">
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=science-fiction">Science-Fiction<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="!/home?query=drama">Drama<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="!/home?query=romance">Romance<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=fantasy">Fantasy<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=mystery">Mystery<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=horror">Horror<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=children's-books">Children's Books<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=non-fiction">Non-Fiction<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=adventure">>Adventure<i
+									class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="#!/home?query=realistic-fiction">Realistic-Fiction<i
+									class="fa fa-angle-down"></i></a></li>
+						</ul>
+					</li>
+					<li class="page_menu_item menu_mm"><a href="#!/about">About Us<i class="fa fa-angle-down"></i></a>
+					</li>
+					<li class="page_menu_item menu_mm"><a href="#!/contact">Contact<i
+							class="fa fa-angle-down"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+	</div>
+
+	<!-- Contact -->
+
+	<br>	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="contact">
+		<div class="container">
+			<div class="section_title" style="font-size: 30pt">About Us</div>
+			<br>	<br>
+			<br>
+			<br>
+			<br>
+			<div class="product_content" style="font-size: 18pt">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis, est a gravida pulvinar, diam urna tempus nisi, eget euismod dui ex in urna. Aenean aliquet leo metus, sed dictum magna dignissim at. Ut nisl dolor, consequat id pulvinar a, rutrum quis quam. Etiam magna ex, ornare aliquam massa eget, dictum mollis nulla. Nam placerat commodo ipsum at ullamcorper. In nec tristique justo. Aliquam pulvinar velit eu turpis iaculis, dictum auctor ligula pulvinar. Maecenas erat leo, egestas non dolor a, accumsan elementum risus.
+
+				Maecenas euismod feugiat eros in suscipit. Morbi purus arcu, molestie nec pretium at, fringilla a sem. Morbi egestas est nec cursus pellentesque. Aliquam erat volutpat. Nulla facilisi. Ut vitae mi purus. Aenean massa neque, ultricies eu viverra eu, volutpat et elit. Nullam tristique in orci vel eleifend. Curabitur ut eros at tortor pulvinar fringilla. Ut efficitur eget augue vel eleifend. Pellentesque in velit a tellus sagittis scelerisque. Duis cursus nibh eget finibus tincidunt.
+
+				Morbi ut sollicitudin nisi. Sed varius nisi eu quam aliquet egestas. Duis sed lorem porta, imperdiet est in, varius magna. Nulla eleifend rhoncus aliquam. Phasellus dictum auctor consequat. Nulla malesuada commodo leo, eget molestie ex varius nec. In laoreet leo et tortor scelerisque porttitor. Donec eu diam velit. In at auctor dolor, id ullamcorper erat. Mauris tempus eget dolor vel tincidunt.
+
+				Curabitur et blandit sem, a tempor risus. In consectetur semper nisl quis interdum. Donec suscipit consequat orci, at tempor purus viverra nec. Integer mattis est luctus, porttitor nunc nec, fringilla elit. Sed sed blandit eros, et semper ligula. Sed ultrices eleifend ante, quis rhoncus sem sollicitudin in. Nam egestas ipsum quis volutpat sollicitudin. In et accumsan risus. Nam dolor magna, porta in facilisis vel, ullamcorper at velit. Cras dignissim nisi vitae luctus feugiat. Nullam porta risus odio, at varius tellus dignissim et. Mauris tincidunt, orci ac dictum vehicula, nisi enim ultrices nunc, ac scelerisque dui urna et mi. Integer et orci eleifend, interdum arcu nec, vestibulum augue. Fusce et leo rutrum, posuere urna non, scelerisque ipsum.
+
+				In sit amet dapibus augue. Cras enim augue, faucibus sed dolor id, pellentesque porttitor justo. Sed vestibulum tempor quam, quis feugiat nunc luctus nec. Aenean id urna ullamcorper, iaculis enim et, egestas felis. Sed sed tincidunt mi, ac venenatis libero. Ut efficitur sapien vitae scelerisque dignissim. In ac massa congue, eleifend purus a, mattis ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at urna commodo, consectetur neque at, mattis arcu. Nunc aliquet mauris lacus, non tempus eros rutrum sed.
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<div class="footer_overlay"></div>
+	<footer class="footer">
+		<div class="footer_background" style="background: #868e96"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+						<div class="footer_logo"><a href="#">Room to Read</a></div>
+						<div class="copyright ml-auto mr-auto" style="alignment: right">
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+							All rights reserved | This website is built and managed by <a href="http://osc.lk/geckonet"
+																						  target="_blank">Gecko
+							Network</a>
+						</div>
+						<div class="footer_social ml-lg-auto">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!--<script src="js/jquery-3.2.1.min.js"></script>-->
+<!--<script src="styles/bootstrap4/popper.js"></script>-->
+<!--<script src="styles/bootstrap4/bootstrap.min.js"></script>-->
+<!--<script src="plugins/greensock/TweenMax.min.js"></script>-->
+<!--<script src="plugins/greensock/TimelineMax.min.js"></script>-->
+<!--<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>-->
+<!--<script src="plugins/greensock/animation.gsap.min.js"></script>-->
+<!--<script src="plugins/greensock/ScrollToPlugin.min.js"></script>-->
+<!--<script src="plugins/easing/easing.js"></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>-->
+</body>
+</html>

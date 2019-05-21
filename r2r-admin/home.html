@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+<script src="app.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="shortcut icon" href="assets/favicon.jpg">
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn|R2R Admin Dashboard</title>
+</head>
+<body>
+<center>
+
+    <div align="left">
+        <button style="font-size: large; display: inline-block; margin-right: 85%" ng-click="logout()">Logout</button>
+        <!--<button style="font-size: large; display: inline-block;" ng-click="createGallery()">Add New Gallery</button>-->
+
+    </div>
+    <h1>Room to Read</h1>
+    <h3 style="color: #00BCD4">Online Store Admin Dashboard</h3>
+    <br><br>
+    <form name="gameForm">
+
+
+        <button type="submit" class="button buttonBlue" style="font-family: Futura" ng-click="manageInventory()" >Manage Inventory
+            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+
+        <button type="submit" class="button buttonBlue" style="font-family: Futura" ng-click="pendingOrders()">See Pending Orders
+            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+
+        <button type="submit" class="button buttonBlue" style="font-family: Futura" ng-click="completedOrders()">See Completed Orders
+            <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+
+    </form>
+
+    <br><br><br>
+</center>
+</body>
+</html>

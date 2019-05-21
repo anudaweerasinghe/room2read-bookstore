@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>OSC's Room to Read</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- Header -->
+
+    <header class="header">
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo"><a href="#">Room to Read</a></div>
+                            <div class="header_extra ml-auto">
+                                <div class="search_panel_content d-flex flex-row align-items-center justify-content-end">
+                                    <form ng-submit="searchBooks()">
+                                        <input type="text" class="search_input" placeholder="Search Store"
+                                               required="required" style="background: lightgray; width: 180%" name="searchquery" ng-model="searchquery">
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+                            <nav class="main_nav">
+
+                                <ul>
+                                    <li class="active">
+                                        <a href="#!/home">Home</a>
+                                    </li>
+                                    <li class="hassubs">
+                                        <a href="">Categories</a>
+                                        <ul>
+                                            <li><a href="#!/home?query=science-fiction">Science-Fiction</a></li>
+                                            <li><a href="#!/home?query=drama">Drama</a></li>
+                                            <li><a href="#!/home?query=romance">Romance</a></li>
+                                            <li><a href="#!/home?query=fantasy">Fantasy</a></li>
+                                            <li><a href="#!/home?query=mystery">Mystery</a></li>
+                                            <li><a href="#!/home?query=horror">Horror</a></li>
+                                            <li><a href="#!/home?query=children's-books">Children's books</a></li>
+                                            <li><a href="#!/home?query=non-fiction">Non-Fiction</a></li>
+                                            <li><a href="#!/home?query=adventure">Adventure</a></li>
+                                            <li><a href="#!/home?query=realistic-fiction">Realistic Fiction</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#!/about">About Us</a></li>
+                                    <li><a href="#!/contact">Contact</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Panel -->
+        <div class="search_panel trans_300">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="search_panel_content d-flex flex-row align-items-center justify-content-end">
+                            <form action="#">
+                                <input type="text" class="search_input" placeholder="Search Store" required="required">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social -->
+
+    </header>
+
+    <!-- Menu -->
+
+    <div class="menu menu_mm trans_300">
+        <div class="menu_container menu_mm">
+            <div class="page_menu_content">
+
+                <div class="page_menu_search menu_mm">
+                    <form action="#">
+                        <input type="search" required="required" class="page_menu_search_input menu_mm"
+                               placeholder="Search for products...">
+                    </form>
+                </div>
+                <ul class="page_menu_nav menu_mm">
+                    <li class="page_menu_item menu_mm">
+                        <a href="#!/home">Home<i class="fa fa-angle-down"></i></a>
+
+                    </li>
+                    <li class="page_menu_item has-children menu_mm">
+                        <a href="categories.html">Categories<i class="fa fa-angle-down"></i></a>
+                        <ul class="page_menu_selection menu_mm">
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=science-fiction">Science-Fiction<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="!/home?query=drama">Drama<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="!/home?query=romance">Romance<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=fantasy">Fantasy<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=mystery">Mystery<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=horror">Horror<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=children's-books">Children's Books<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=non-fiction">Non-Fiction<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=adventure">>Adventure<i
+                                    class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="#!/home?query=realistic-fiction">Realistic-Fiction<i
+                                    class="fa fa-angle-down"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="page_menu_item menu_mm"><a href="#!/about">About Us<i class="fa fa-angle-down"></i></a>
+                    </li>
+                    <li class="page_menu_item menu_mm"><a href="#!/contact">Contact<i
+                            class="fa fa-angle-down"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+    </div>
+
+    <!-- Home -->
+
+<br><br>
+    <!-- Products -->
+
+    <div class="products" ng-if="laptop">
+        <center>
+        <div class="container">
+                <div class="col">
+
+                    <div class="row">
+
+                        <!-- Product -->
+                        <div class="product" style=" width: 25%; padding-right: 20px" ng-repeat="item in books">
+                            <div class="product_image"><a href="#!/product?id={{item.id}}"><img src="{{item.picurl}}" alt="" height="400px"></a></div>
+                            <div class="product_content">
+                                <div class="product_title"><a href="#!/product?id={{item.id}}">{{item.name}}</a></div>
+                                <div class="product_price">LKR {{item.price}}</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+</center>
+    </div>
+<div class="products" ng-if="mobile">
+    <center>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+
+                    <!-- Product -->
+                    <div class="product" ng-repeat="item in books">
+                        <div class="product_image"><img src="{{item.picurl}}" alt="" height="300px"></div>
+                        <div class="product_content">
+                            <div class="product_title"><a href="#!/product?id={{item.id}}">{{item.name}}</a></div>
+                            <div class="product_price">LKR {{item.price}}</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </center>
+</div>
+
+
+    <!-- Footer -->
+
+    <div class="footer_overlay"></div>
+    <footer class="footer">
+        <div class="footer_background" style="background: #868e96"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                        <div class="footer_logo"><a href="#">Room to Read</a></div>
+                        <div class="copyright ml-auto mr-auto" style="alignment: right">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This website is built and managed by <a href="http://osc.lk/geckonet"
+                                                                                          target="_blank">Gecko
+                            Network</a>
+                        </div>
+                        <div class="footer_social ml-lg-auto">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>
